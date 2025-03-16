@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <link rel="stylesheet" href="/style.css">
+     <!-- <link rel="stylesheet" href="/temp.css"> -->
 </head>
 <body>
     <div id="page1"> <!--homepage-->
@@ -21,7 +22,9 @@
                 <div>
                     <h1 id="fullstack"> FULL STACK DEVELOPER </h1>          
                     <p id="p">I am harsha - <span id="stack">Full Stack Developer</span>  with a passion for creating <br> beautiful and responsive websites.</p>
-                    <button id="workBtn">View My Work</button>
+                    <a href="https://github.com/Harsha-Buddhika-Official">
+                        <button id="workBtn">View My Work</button>
+                    </a>
                 </div>    
             <img src="/images/photo_2024-06-06_00-47-15.png" alt="my photo" width="1000px" id="image">
         </div>
@@ -30,27 +33,27 @@
     <div id="page2"> <!--Services-->
         <h1 id="service">My services</h3>
         
-        <div class="services-container">
+        <div class="services-container" id="one">
             <div class="service-card">
-                <div class="icon">💻</div>
-                <h2>Website Development</h2>
-                <p>I create websites based on your ready-made design. Whether it's a landing page or a business card website, I will make it look great and work smoothly on any device.</p>
-            </div>
-    
-            <div class="connector"></div>
-    
-            <div class="service-card">
-                <div class="icon">🎨</div>
+                <img src="https://cdn-icons-png.freepik.com/256/17365/17365478.png?semt=ais_hybrid" alt="" width="50px">
                 <h2>Web Design</h2>
                 <p>I can design your website from scratch. I create modern, simple, and user-friendly designs that match your brand and goals.</p>
             </div>
     
             <div class="connector"></div>
     
-            <div class="service-card">
+            <div class="service-card" id="two">
+                <div class="icon">🎨</div>
+                <h2>Web Development</h2>
+                <p>I develop responsive and high-performance websites using the latest technologies to ensure speed, security, and scalability.</p>
+            </div>
+     
+            <div class="connector"></div>
+    
+            <div class="service-card" id="three">
                 <div class="icon">🔵</div>
-                <h2>WordPress Development</h2>
-                <p>I build websites on WordPress, making them easy to update and manage. It's a great choice for blogs, small businesses, or portfolios.</p>
+                <h2>Maintaining</h2>
+                <p>I provide ongoing website maintenance, including updates, security checks, and performance optimizations to keep your site running smoothly.</p>
             </div>
         </div>
     </div>
