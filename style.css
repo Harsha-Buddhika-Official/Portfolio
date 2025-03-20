@@ -1,3 +1,4 @@
+/* page 1 */
 body{
     margin: 0;
     background-color: #111723;
@@ -96,7 +97,7 @@ body{
     right: -3px;
     bottom: -3px;
     background: linear-gradient(90deg, #ff00ff, #00ffff);
-    border-radius: 32px; /* Slightly larger than the button to cover edges */
+    border-radius: 32px;
     z-index: -2;
 }
 
@@ -108,7 +109,7 @@ body{
     right: 2px;
     bottom: 2px;
     background: #111723; 
-    border-radius: 28px; /* Slightly smaller to create a border effect */
+    border-radius: 28px; 
     z-index: -1;
 }
 
@@ -194,3 +195,86 @@ body{
 }
 
 /* page 3 */
+
+#education{
+    font-size: 80px;
+    font-weight: bold;
+    margin-left: 100px;
+    display: inline-block; 
+
+    background: linear-gradient(90deg, #f72b8e, #7a60b7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 20px;
+    margin: 0px 100px;
+    position: relative;
+}
+
+.education-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    padding-left: 50px;
+    border-radius: 25px;
+    text-align: left;
+    width: 700px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+#eduOne,
+#eduThree{
+    align-self: flex-end;
+}
+
+#eduTwo{
+    align-self: flex-start;
+}
+
+.education-card:nth-child(odd) {
+    align-self: flex-end;
+}
+
+.education-card:nth-child(even) {
+    align-self: flex-start;
+}
+
+.icons {
+    display: flex;
+    align-items: center;   
+    gap: 20px;             
+}
+
+.education-container h2{
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.education-container p{
+    line-height: 22px;
+    font-size: 18px;
+}
+
+#page2{
+    border-bottom: 1px solid;
+    padding-bottom: 50px;
+}
+
+.bold{
+    font-weight: bolder;
+    color: red;
+}
+/* page 4 */
+
+
+
