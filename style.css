@@ -10,6 +10,21 @@ body {
     margin-left: 50px;
 }
 
+a {
+    text-decoration: none; /* removes underline */
+    color: inherit;         /* inherits color from the parent or can be set directly */
+}
+
+a:visited {
+    color: white;           /* prevents purple after clicking */
+    text-decoration: none;
+}
+
+#name {
+    color: white;
+}
+
+
 .negation_bar {
     border: 1px solid;
     border-radius: 20px;
@@ -27,7 +42,7 @@ body {
     z-index: 1000; /* Ensure it stays above other content */
 }
 
-.list a {
+.list a{
     text-decoration: none;
     color: inherit;
 }
@@ -47,7 +62,7 @@ body {
     cursor: pointer;
 }
 
-.list li:active {
+.list li:active{
     background-color: white;
 }
 
@@ -183,6 +198,93 @@ body {
     box-shadow: 0 0 15px rgba(255, 0, 255, 0.8), 0 0 15px rgba(0, 255, 255, 0.8);
 }
 
+/* responsive page 1 */
+/* For tablets */
+@media (max-width: 1024px) {
+    .negation_bar {
+        margin: 20px 20px 0;
+        padding: 10px;
+    }
+
+    .list {
+        gap: 15px;
+        margin-right: 20px;
+    }
+
+    .list li {
+        font-size: 14px;
+    }
+
+    #fullstack {
+        font-size: 48px;
+        margin: 0px 20px;
+    }
+
+    #p {
+        font-size: 20px;
+        margin: 10px 20px;
+    }
+
+    .develop {
+        margin: 80px 20px 20px 20px;
+    }
+
+    #image {
+        max-width: 60%;
+        top: 30px;
+    }
+
+    #workBtn {
+        margin: 0px 20px;
+        padding: 15px 30px;
+        font-size: 20px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .negation_bar {
+        margin: 10px 10px 0;
+        padding: 5px;
+    }
+
+    .list {
+        gap: 10px;
+        margin-right: 10px;
+    }
+
+    .list li {
+        font-size: 12px;
+    }
+
+    #fullstack {
+        font-size: 36px;
+        margin: 0px 10px;
+    }
+
+    #p {
+        font-size: 16px;
+        margin: 10px 10px;
+    }
+
+    .develop {
+        flex-direction: column;
+        margin: 60px 10px 10px 10px;
+        text-align: center;
+    }
+
+    #image {
+        max-width: 100%;
+        top: 20px;
+    }
+
+    #workBtn {
+        margin: 0px 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
 /* page 2 */
 
 #service {
@@ -257,6 +359,77 @@ body {
 #page2 {
     border-bottom: 1px solid;
     padding-bottom: 50px;
+}
+
+/* responsive page 1 */
+/* For tablets */
+@media (max-width: 1024px) {
+    #service {
+        font-size: 60px;
+        margin-left: 50px;
+    }
+
+    .services-container {
+        margin: 0px 50px;
+    }
+
+    .service-card {
+        width: 600px;
+        padding: 15px;
+        padding-left: 30px;
+    }
+
+    .services-container h2 {
+        font-size: 26px;
+    }
+
+    .services-container p {
+        font-size: 16px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    #service {
+        font-size: 40px;
+        margin-left: 20px;
+        text-align: center;
+        display: block;
+    }
+
+    .services-container {
+        margin: 0px 20px;
+        gap: 15px;
+    }
+
+    .service-card {
+        width: 100%;
+        padding: 10px;
+        padding-left: 20px;
+        align-self: center !important; /* Center all cards on mobile */
+    }
+
+    .service-card:nth-child(odd),
+    .service-card:nth-child(even) {
+        align-self: center !important; /* Override odd/even alignment */
+    }
+
+    .icons {
+        gap: 10px;
+    }
+
+    .services-container h2 {
+        font-size: 22px;
+    }
+
+    .services-container p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #page2 {
+        padding-bottom: 30px;
+    }
 }
 
 /* page 3 */
