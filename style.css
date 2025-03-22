@@ -17,7 +17,9 @@ body {
     justify-content: space-between;
     margin: 50px 50px 0; /* Keep the same top and side margins */
     padding: 10px 20px; /* Adjust padding for better spacing */
-    position: fixed; /* Make the bar stick to the top */
+    
+    position: fixed; 
+    
     top: 0; /* Position at the top of the viewport */
     left: 0; /* Align to the left */
     right: 0; /* Align to the right */
@@ -370,4 +372,44 @@ body {
     animation: float 1.5s ease-in-out; /* Apply the up-and-down animation */
 }
 
+#page3 {
+    border-bottom: 1px solid;
+    padding-bottom: 50px;
+}
+
 /* page 4 */
+
+#skills {
+    font-size: 80px;
+    font-weight: bold;
+    margin-left: 100px;
+    display: inline-block;
+
+    background: linear-gradient(90deg, #f72b8e, #7a60b7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#skill_dis{
+    display: flex;
+    justify-content: center;
+    height: 100hv;
+
+    font-size: 30px;
+}
+
+#skills_icon,
+#technologies_icon{
+    display: flex;
+    justify-content: center; 
+}
+
+#skills_icon img,
+#technologies_icon img{
+    padding: 10px;
+}
+
+#page4 {
+    border-bottom: 1px solid;
+    padding-bottom: 50px;
+}
