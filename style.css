@@ -1,39 +1,46 @@
 /* page 1 */
-body{
+body {
     margin: 0;
     background-color: #111723;
     color: white;
     font-family: Arial, sans-serif;
 }
 
-#name{
+#name {
     margin-left: 50px;
 }
-.titals{
+
+.negation_bar {
     border: 1px solid;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
-    margin: 50px;
-    padding: 10px 0px 10px 0px;
+    margin: 50px 50px 0; /* Keep the same top and side margins */
+    padding: 10px 20px; /* Adjust padding for better spacing */
+    position: fixed; /* Make the bar stick to the top */
+    top: 0; /* Position at the top of the viewport */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    background-color: rgba(44, 44, 44, 0.4) ; /* Match the background color of the page */
+    z-index: 1000; /* Ensure it stays above other content */
 }
 
 .list a {
-    text-decoration: none; 
-    color: inherit; 
+    text-decoration: none;
+    color: inherit;
 }
 
 .list {
     list-style: none;
-    display: flex; 
+    display: flex;
     justify-content: right;
     align-items: center;
-    gap: 20px; 
+    gap: 20px;
     margin-right: 50px;
 }
 
 .list li {
-    font-size: 16px; 
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -42,7 +49,7 @@ body{
     background-color: white;
 }
 
-#fullstack{
+#fullstack {
     margin: 0px 50px;
     font-size: 64px;
     background: linear-gradient(90deg, #f72b8e, #7a60b7);
@@ -51,10 +58,14 @@ body{
 }
 
 #fullstack span {
-    display: inline-block; /* Ensure each line is treated as a block */
-    overflow: hidden; /* Hide overflow text */
-    border-right: 0.15em solid orange; /* Cursor effect */
-    white-space: nowrap; /* Keep text in one line */
+    display: inline-block;
+    /* Ensure each line is treated as a block */
+    overflow: hidden;
+    /* Hide overflow text */
+    border-right: 0.15em solid orange;
+    /* Cursor effect */
+    white-space: nowrap;
+    /* Keep text in one line */
     animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
@@ -63,6 +74,7 @@ body{
     from {
         width: 0;
     }
+
     to {
         width: 100%;
     }
@@ -70,42 +82,50 @@ body{
 
 /* Cursor blink animation */
 @keyframes blink-caret {
-    from, to {
+
+    from,
+    to {
         border-color: transparent;
     }
+
     50% {
         border-color: orange;
     }
 }
 
-.develop{
+.develop {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px;
+    margin: 100px 50px 50px 50px;
+    padding-top: 20px;
 }
 
-#image{
+#image {
     justify-content: right;
     max-width: 80%;
     position: relative;
     top: 50px;
 }
- 
-#page1{
+
+#page1 {
     border-bottom: 1px solid;
 }
 
 #p {
-    font-family: Arial, sans-serif; /* Use your preferred font */
+    font-family: Arial, sans-serif;
+    /* Use your preferred font */
     font-size: 25px;
     line-height: 35px;
-    margin: 0px 50px;
+    margin: 10px 50px;
     padding: 10px;
     margin-bottom: 20px;
-    min-height: 100px; /* Set a minimum height to prevent movement */
-    overflow: hidden; /* Hide overflow text */
-    position: relative; /* Align to default position */
+    min-height: 100px;
+    /* Set a minimum height to prevent movement */
+    overflow: hidden;
+    /* Hide overflow text */
+    position: relative;
+    /* Align to default position */
     top: 0px;
     left: 0px;
 }
@@ -151,8 +171,8 @@ body{
     left: 2px;
     right: 2px;
     bottom: 2px;
-    background: #111723; 
-    border-radius: 28px; 
+    background: #111723;
+    border-radius: 28px;
     z-index: -1;
 }
 
@@ -163,15 +183,15 @@ body{
 
 /* page 2 */
 
-#service{
+#service {
     font-size: 80px;
     font-weight: bold;
     margin-left: 100px;
-    display: inline-block; 
+    display: inline-block;
 
     background: linear-gradient(90deg, #f72b8e, #7a60b7);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
 }
 
 .services-container {
@@ -200,11 +220,11 @@ body{
 }
 
 #one,
-#three{
+#three {
     align-self: flex-start;
 }
 
-#two{
+#two {
     align-self: flex-end;
 }
 
@@ -218,36 +238,36 @@ body{
 
 .icons {
     display: flex;
-    align-items: center;   
-    gap: 20px;             
+    align-items: center;
+    gap: 20px;
 }
 
-.services-container h2{
+.services-container h2 {
     font-size: 30px;
     font-weight: 550;
 }
 
-.services-container p{
+.services-container p {
     line-height: 22px;
     font-size: 18px;
 }
 
-#page2{
+#page2 {
     border-bottom: 1px solid;
     padding-bottom: 50px;
 }
 
 /* page 3 */
 
-#education{
+#education {
     font-size: 80px;
     font-weight: bold;
     margin-left: 100px;
-    display: inline-block; 
+    display: inline-block;
 
     background: linear-gradient(90deg, #f72b8e, #7a60b7);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
 }
 
 .education-container {
@@ -276,11 +296,11 @@ body{
 }
 
 #eduOne,
-#eduThree{
+#eduThree {
     align-self: flex-end;
 }
 
-#eduTwo{
+#eduTwo {
     align-self: flex-start;
 }
 
@@ -294,30 +314,60 @@ body{
 
 .icons {
     display: flex;
-    align-items: center;   
-    gap: 20px;             
+    align-items: center;
+    gap: 20px;
 }
 
-.education-container h2{
+.education-container h2 {
     font-size: 30px;
     font-weight: 550;
 }
 
-.education-container p{
+.education-container p {
     line-height: 22px;
     font-size: 18px;
 }
 
-#page2{
+#page2 {
     border-bottom: 1px solid;
     padding-bottom: 50px;
 }
 
-.bold{
+.bold {
     font-weight: bolder;
     color: red;
 }
+
+/* Up-and-down animation */
+@keyframes float {
+    0% {
+        transform: translateY(20px); /* Start slightly below */
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-10px); /* Move slightly up */
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0); /* Return to original position */
+        opacity: 1;
+    }
+}
+
+/* Apply animations to the sections */
+.services-container,
+.education-container {
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly below */
+    transition: opacity 20s ease-in-out, transform 20s ease-in-out; /* Smooth transition */
+}
+
+/* Add a class to trigger the animation when the section is in view */
+.services-container.in-view,
+.education-container.in-view {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+    animation: float 1.5s ease-in-out; /* Apply the up-and-down animation */
+}
+
 /* page 4 */
-
-
-
