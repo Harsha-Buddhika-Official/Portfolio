@@ -7,11 +7,16 @@
      <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <div id="page1">
+    <div id="page1"> <!--homepage-->
         <div class="titals">
             <h2 id="name">Harsha Buddhika</h2>
             <ul class="list">
-                <li>SERVICES</li>
+                <a href="#page2">
+                    <li>SERVICES</li>
+                </a>
+                <a href="#page3">
+                    <li>EDUCATIONS</li>
+                </a>
                 <li>TECHNOLOGIES</li>
                 <li>PORTFOLIO</li>
                 <li>CONTACT</li>
@@ -19,15 +24,92 @@
         </div>
         <div class="develop">
                 <div>
-                    <h1 id="fullstack"> FULL STACK DEVELOPER </h1>          
+                    <h1 id="fullstack">
+                        <span id="line1">FULL STACK</span><br>
+                        <span id="line2">DEVELOPER</span>
+                    </h1>         
                     <p id="p">I am harsha - <span id="stack">Full Stack Developer</span>  with a passion for creating <br> beautiful and responsive websites.</p>
-                    <button id="workBtn">View My Work</button>
+                    <a href="https://github.com/Harsha-Buddhika-Official">
+                        <button id="workBtn">View My Work</button>
+                    </a>
                 </div>    
             <img src="/images/photo_2024-06-06_00-47-15.png" alt="my photo" width="1000px" id="image">
         </div>
     </div>
-    <div>
+
+    <div id="page2"> <!--Services-->
+        <h1 id="service">My services</h3>
         
+        <div class="services-container" id="one">
+            <div class="service-card">
+                <div class="icons">
+                    <img src="/images/design.png" alt="" width="50px">
+                    <h2>Web Design</h2>
+                </div>
+                <p>I can design your website from scratch. I create modern, simple, and user-friendly designs that match your brand and goals.</p>
+            </div>
+    
+            <div class="connector"></div>
+    
+            <div class="service-card" id="two">
+                <div class="icons">
+                    <img src="/images/development.png" alt="" width="50px">
+                    <h2>Web Development</h2>
+                </div>
+                <p>I develop responsive and high-performance websites using the latest technologies to ensure speed, security, and scalability.</p>
+            </div>
+     
+            <div class="connector"></div>
+    
+            <div class="service-card" id="three">
+                <div class="icons">
+                    <img src="/images/maintain.png" alt="" width="50px">
+                    <h2>Maintaining</h2>
+                </div>
+                <p>I provide ongoing website maintenance, including updates, security checks, and performance optimizations to keep your site running smoothly.</p>
+            </div>
+        </div>
     </div>
+
+    <div id="page3"> <!--Educations-->
+        <h1 id="education">My Educations</h3>
+        
+        <div class="education-container" id="eduOne">
+            <div class="education-card">
+                <div class="icons">
+                    <img src="/images/degree.png" alt="" width="50px">
+                    <h2>Undergraduate</h2>
+                </div>
+                <p>I'm a Computer Science undergraduate with a passion for creative web development. I design and build modern, user-friendly websites that bring ideas to life.</p>
+            </div>
+    
+            <div class="connector"></div>
+    
+            <div class="education-card" id="eduTwo">
+                <div class="icons">
+                    <img src="/images/certificates.png" alt="" width="50px">
+                    <h2>Certificates</h2>
+                </div>
+                <p><span class="bold">Certificate in Cyber Security & Networking</span> from NextGen Campus, showcasing my knowledge in cybersecurity and network fundamentals.<br>
+                    <br>
+                    <span class="bold">CSS (Basic)</span> Certification from HackerRank, demonstrating my proficiency in foundational CSS skills.<br>
+                    <br>
+                    <span class="bold">Mastering HTML5 and CSS3 (Beginner Level)</span> from Kloomars Jonood and Samaneh Mazidi Sharaf Abadi, reflecting my commitment to mastering modern web development technologies.
+                </p>
+            </div>
+     
+            <div class="connector"></div>
+    
+            <!-- <div class="education-card" id="eduThree">
+                <div class="icons">
+                    <img src="/images/maintain.png" alt="" width="50px">
+                    <h2>Maintaining</h2>
+                </div>
+                <p>I provide ongoing website maintenance, including updates, security checks, and performance optimizations to keep your site running smoothly.</p>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
 </body>
 </html>
