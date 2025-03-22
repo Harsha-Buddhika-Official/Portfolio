@@ -19,11 +19,11 @@ This is a **personal portfolio website** showcasing my skills, services, and pro
 ## Project Structure
 ```
 📂 Project Folder
- ├── 📂 images         # Stores images used in the website
- ├── 📄 index.html     # Homepage
- ├── 📄 services.html  # Services Page
- ├── 📄 style.css      # Stylesheet
- ├── 📄 README.md      # Documentation
+  ├── 📂 images         # Stores images used in the website
+  ├── 📄 README.md      # Documentation
+  ├── 📄 index.html     # Homepage
+  ├── 📄 script.js  # javaScript 
+  ├── 📄 style.css      # Stylesheet
 ```
 
 ## How to Modify
