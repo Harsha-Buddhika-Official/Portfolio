@@ -22,7 +22,7 @@ This is a **personal portfolio website** showcasing my skills, services, and pro
   ├── 📂 images         # Stores images used in the website
   ├── 📄 README.md      # Documentation
   ├── 📄 index.html     # Homepage
-  ├── 📄 script.js  # javaScript 
+  ├── 📄 script.js      # javaScript 
   ├── 📄 style.css      # Stylesheet
 ```
 
