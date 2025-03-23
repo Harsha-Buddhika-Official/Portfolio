@@ -587,6 +587,71 @@ a:visited {
     padding-bottom: 50px;
 }
 
+/* For tablets */
+@media (max-width: 1024px) {
+    #education {
+        font-size: 60px;
+        margin-left: 50px;
+    }
+
+    .education-container {
+        margin: 0px 50px;
+    }
+
+    .education-card {
+        width: 600px;
+        padding: 15px;
+        padding-left: 30px;
+    }
+
+    .education-container h2 {
+        font-size: 26px;
+    }
+
+    .education-container p {
+        font-size: 16px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    #education {
+        font-size: 40px;
+        margin-left: 20px;
+        text-align: center;
+        display: block;
+    }
+
+    .education-container {
+        margin: 0px 20px;
+        gap: 15px;
+    }
+
+    .education-card {
+        width: 100%;
+        padding: 10px;
+        padding-left: 20px;
+        align-self: center !important; /* Center all cards on mobile */
+    }
+
+    .icons {
+        gap: 10px;
+    }
+
+    .education-container h2 {
+        font-size: 22px;
+    }
+
+    .education-container p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #page3 {
+        padding-bottom: 30px;
+    }
+}
+
 /* page 5 */
 
 /* page 6 */
