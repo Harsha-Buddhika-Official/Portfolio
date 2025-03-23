@@ -239,6 +239,9 @@ a:visited {
         padding: 15px 30px;
         font-size: 20px;
     }
+    #page1{
+        padding-bottom: 10px;
+    }
 }
 
 /* For mobile devices */
