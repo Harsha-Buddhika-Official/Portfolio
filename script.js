@@ -98,3 +98,64 @@ window.addEventListener('scroll', handleScroll);
 
 // Trigger the check on page load in case the section is already in view
 window.addEventListener('load', handleScroll);
+
+// Project filtering functionality
+document.addEventListener('DOMContentLoaded', () => {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+
+          const filter = button.getAttribute('data-filter');
+
+          projectCards.forEach(card => {
+              const category = card.getAttribute('data-category');
+              
+              if (filter === 'all' || category === filter) {
+                  card.style.display = 'block';
+              } else {
+                  card.style.display = 'none';
+              }
+          });
+      });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  // 1. Set initial state (opacity: 0)
+  const skillIcons = document.querySelectorAll('#skills_icon img, #technologies_icon img');
+  skillIcons.forEach(icon => {
+      icon.style.opacity = '0';
+      icon.style.transition = 'opacity 2s ease-out';
+  });
+
+  // 2. Configure intersection observer
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              // 3. Animate icons one by one when section is visible
+              skillIcons.forEach((icon, index) => {
+                  setTimeout(() => {
+                      icon.style.opacity = '1';
+                  }, index * 300); // 300ms delay between each icon
+              });
+              
+              // Stop observing after animation triggers
+              observer.disconnect();
+          }
+      });
+  }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+  });
+
+  // 4. Observe the skills section
+  const skillsSection = document.getElementById('skills');
+  if (skillsSection) {
+      observer.observe(skillsSection);
+  }
+});

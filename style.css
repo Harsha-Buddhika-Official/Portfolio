@@ -542,34 +542,40 @@ a:visited {
 
 /* page 4 */
 
+/* Original Styles (unchanged) */
 #skills {
     font-size: 80px;
     font-weight: bold;
     margin-left: 100px;
     display: inline-block;
-
     background: linear-gradient(90deg, #f72b8e, #7a60b7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-#skill_dis{
+#skill_dis {
     display: flex;
     justify-content: center;
     height: 100hv;
-
     font-size: 30px;
 }
 
 #skills_icon,
-#technologies_icon{
+#technologies_icon {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #skills_icon img,
-#technologies_icon img{
+#technologies_icon img {
     padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+#skills_icon img:hover,
+#technologies_icon img:hover {
+    transform: scale(1.1);
 }
 
 #page4 {
@@ -577,7 +583,6 @@ a:visited {
     padding-bottom: 50px;
 }
 
-/* For tablets */
 @media (max-width: 1024px) {
     #education {
         font-size: 60px;
@@ -603,7 +608,6 @@ a:visited {
     }
 }
 
-/* For mobile devices */
 @media (max-width: 768px) {
     #education {
         font-size: 40px;
@@ -621,7 +625,7 @@ a:visited {
         width: 100%;
         padding: 10px;
         padding-left: 20px;
-        align-self: center !important; /* Center all cards on mobile */
+        align-self: center !important;
     }
 
     .icons {
@@ -644,18 +648,121 @@ a:visited {
 
 /* page 5 */
 
+/* Projects section */
+#projects {
+    font-size: 80px;
+    font-weight: bold;
+    margin-left: 100px;
+    display: inline-block;
+
+    background: linear-gradient(90deg, #f72b8e, #7a60b7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.projects-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: white;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background-color: #111723;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 1rem;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.project-description {
+    color: #b8b8b8;
+    margin-bottom: 1rem;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Filter buttons */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #ecf0f1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn.active {
+    background-color: #3498db;
+    color: white;
+}
+#page5 {
+    border-bottom: 1px solid;
+}
+
 /* page 6 */
-
-
-/* General Styles */
-
 #page6 {
     padding: 50px 200px;
     color: white;
     margin: 0px;
 }
 
-/* Contact Container */
 .contact-container {
     text-align: center;
     margin: 0 auto;
@@ -674,17 +781,15 @@ a:visited {
     margin: 20px 0;
 }
 
-/* Flexbox layout for details and form */
 .contact-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 50px;
     margin-top: 40px;
-    flex-wrap: wrap; /* stack on smaller screens */
+    flex-wrap: wrap; 
 }
 
-/* Contact Details Section */
 .contact-details {
     flex: 1;
     min-width: 300px;
@@ -710,7 +815,6 @@ a:visited {
     word-break: break-all;
 }
 
-/* Social Media Icons */
 .social-icons {
     display: flex;
     justify-content: flex-start;
@@ -928,5 +1032,5 @@ a:visited {
         font-size: 18px;
     }
 }
-}
+
 
