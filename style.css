@@ -5,48 +5,38 @@ body {
     color: white;
     font-family: Arial, sans-serif;
 }
-
 #name {
     margin-left: 50px;
 }
-
 a {
     text-decoration: none; /* removes underline */
     color: inherit;         /* inherits color from the parent or can be set directly */
 }
-
 a:visited {
     color: white;           /* prevents purple after clicking */
     text-decoration: none;
 }
-
 #name {
     color: white;
 }
-
-
 .negation_bar {
     border: 1px solid;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
-    margin: 50px 50px 0; /* Keep the same top and side margins */
-    padding: 10px 20px; /* Adjust padding for better spacing */
-    
+    margin: 50px 50px 0; 
+    padding: 10px 20px;   
     position: fixed; 
-    
-    top: 0; /* Position at the top of the viewport */
-    left: 0; /* Align to the left */
-    right: 0; /* Align to the right */
-    background-color: rgba(44, 44, 44, 0.4) ; /* Match the background color of the page */
-    z-index: 1000; /* Ensure it stays above other content */
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    background-color: rgba(44, 44, 44, 0.4) ; 
+    z-index: 1000; 
 }
-
 .list a{
     text-decoration: none;
     color: inherit;
 }
-
 .list {
     list-style: none;
     display: flex;
@@ -55,7 +45,6 @@ a:visited {
     gap: 20px;
     margin-right: 50px;
 }
-
 .list li {
     font-size: 16px;
     font-weight: bold;
@@ -86,12 +75,10 @@ a:visited {
     animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-/* Typing animation */
 @keyframes typing {
     from {
         width: 0;
     }
-
     to {
         width: 100%;
     }
